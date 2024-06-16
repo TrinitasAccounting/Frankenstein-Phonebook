@@ -61,7 +61,8 @@ const App = () => {
         className='monsters-search-box' />
 
 
-      <CardList monsters={filteredMonsters} />              // ___this is the CardList class component we built and are now importing    */}
+      {/* ___this is the CardList class component we built and are now importing */}
+      <CardList monsters={filteredMonsters} />
     </div >
   );
 };
