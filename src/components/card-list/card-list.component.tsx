@@ -2,19 +2,24 @@
 //_____This is for class components_____
 // import { Component } from "react";
 
+import { Monster } from '../../App';
 
 
 
-import Card from '../card/card.component';
+// import Card from '../card/card.component';
 import './card-list.styles.css';
 
+
+type CardListProps = {
+    monsters: Monster[]
+}
 
 
 //_______Functional Component Version_________________
 
-const CardList = (props) => {
+const CardList = ({ monsters }: CardListProps) => {
 
-    const { monsters } = props;
+    // const { monsters } = props;
 
     return (
         <div className='card-list'>

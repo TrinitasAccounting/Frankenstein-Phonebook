@@ -1,17 +1,20 @@
 
 // import { Component } from "react";
-
+import { Monster } from '../../App';
 
 
 // import './card.styles.css';
 
+type CardProps = {
+    monster: Monster;
+}
 
 
 
 //________Functional Component Version_________
 
-const Card = (props) => {
-    const { name, email, id } = props.monster;
+const Card = ({ monster }: CardProps) => {
+    const { name, email, id } = monster;
 
     return (                        //___this is how we added the img, the name, the email. Pulling the img from an outside url
         <div className='card-container' key={id}>
